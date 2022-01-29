@@ -2,6 +2,8 @@
 .idea/
 !.c
 !.h
-
+*.gch
+*.o
+.DS_Store
 .vscode
 cmake-build-debug/
