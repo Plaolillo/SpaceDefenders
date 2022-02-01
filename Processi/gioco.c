@@ -4,6 +4,8 @@ struct pos{
     char sprite[3][4];
     int x, y;
 };
+
+void gioco
 void navicella(int pipeout){
     int i;
     for(i=0; i<12; i++) {
@@ -24,11 +26,11 @@ void navicella(int pipeout){
             }else{
                 y+=5;
             }
-            if(x%4==0){
+            if(i%4==0){
                 x+=5;
             }
             write(pipeout,&navicella, sizeof(navicella));
-
+            usleep (100000);
         }
     }
 }
