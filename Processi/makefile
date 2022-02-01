@@ -12,8 +12,7 @@ gioco.o: menu.h gioco.h gioco.c
 
 clean:
 	rm -f *.o
-	rm -f ./*/*.o
-	rm -f ./*/*.gch
+	rm -f *.gch
 	rm -f test
 	rm *.txt
 
